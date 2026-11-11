@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f3f4f6; color: #202632; font-family: Arial, sans-serif; line-height: 1.5; }
+main { max-width: 900px; margin: 32px auto; padding: 0 20px; }
+h1 { margin-bottom: 4px; }
+h2 { font-size: 20px; margin-top: 0; }
+h3 { margin-top: 0; }
+section { background: white; border: 1px solid #d8dce3; border-radius: 8px; padding: 22px; margin: 20px 0; }
+.productos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.producto { border: 1px solid #d8dce3; border-radius: 5px; padding: 16px; }
+.producto p { margin: 8px 0; }
+label { display: block; margin-bottom: 6px; }
+input { max-width: 100%; width: 260px; padding: 9px; border: 1px solid #8c95a4; border-radius: 4px; font: inherit; margin-right: 8px; }
+button { padding: 8px 14px; border: 1px solid #2556a4; border-radius: 4px; background: #2556a4; color: white; font: inherit; cursor: pointer; }
+button:hover:not(:disabled) { background: #193d77; }
+button:disabled { opacity: .45; cursor: default; }
+button:focus-visible, input:focus-visible { outline: 3px solid #ed9b24; outline-offset: 3px; }
+.botones { display: flex; gap: 8px; flex-wrap: wrap; }
+li { margin: 8px 0; }
+li button { margin-left: 10px; padding: 4px 10px; }
+.oferta { color: #126631; font-weight: bold; }
+@media (max-width: 600px) { .productos { grid-template-columns: 1fr; } section { padding: 16px; } form button { margin-top: 8px; } }
